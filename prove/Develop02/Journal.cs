@@ -26,10 +26,10 @@ public class Journal
     public void SaveToFile()
     {
         Console.WriteLine("Enter the filename to save:");
-        string filename = Console.ReadLine();      
+        string _filename = Console.ReadLine();      
 
-        Console.WriteLine($"Saving to file: {filename}");                                           
-        using (StreamWriter outputFile = new StreamWriter(filename))
+        Console.WriteLine($"Saving to file: {_filename}");                                           
+        using (StreamWriter outputFile = new StreamWriter(_filename))
     
         foreach (Entry e in _entries)   
         {
@@ -44,16 +44,16 @@ public class Journal
 
      public void LoadFromFile()
     {
-        string filename = Console.ReadLine();
-        string[] lines = File.ReadAllLines(filename);
+        string _filename = Console.ReadLine();
+        string[] _lines = File.ReadAllLines(_filename);
 
-        foreach (string line in lines)
+        foreach (string _line in _lines)
         {
-            string[] parts = line.Split(",");
+            string[] _parts = _line.Split(",");
             
-            DateTime date = DateTime.Parse(parts[0]);
-            string entryText = parts[1];
-            string promptText = parts[2];   
+            DateTime date = DateTime.Parse(_parts[0]);
+            string entryText = _parts[1];
+            string promptText = _parts[2];   
         }  
     }
 }

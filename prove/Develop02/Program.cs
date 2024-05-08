@@ -30,12 +30,12 @@ class Program
                 Console.Write("Your answer: ");
                 string answer = Console.ReadLine();
 
-                Entry entry = new Entry();
-                entry._date = DateTime.Now.ToString("yyyy-MM-dd");
-                entry._promptText = prompt;
-                entry._entryText = answer;
+                Entry _entry = new Entry();
+                _entry._date = DateTime.Now.ToString("yyyy-MM-dd");
+                _entry._promptText = prompt;
+                _entry._entryText = answer;
                 
-                journal.AddEntry(entry); 
+                journal.AddEntry(_entry); 
                 
             }
 
