@@ -11,7 +11,4 @@ public class Entry
 
     }
 
-// cada pergunta feita, será um entry, agora vc precisa armazenar cada entry em uma lista, pra poder fazer save and
-//load 
-
 }

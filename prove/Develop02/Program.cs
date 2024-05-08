@@ -1,5 +1,7 @@
 using System;
+using System.IO;
 using System.Security.Cryptography.X509Certificates;
+
 
 class Program
 {
@@ -37,22 +39,19 @@ class Program
                 
             }
 
-            else if (choice == "2 display")
+            else if (choice == "2")
             {
                 journal.DisplayAll();
             }
-            else if (choice == "3")
+
+            else if (choice == "3") // Load files
             {
-                Console.WriteLine("What is the file name?");
-               string filename = Console.ReadLine();
-                journal.LoadFromFile(a);
+                journal.LoadFromFile();
+                Console.WriteLine("File loaded sucessfully!");
             }
-            else if (choice == "4")
+            else if (choice == "4") //Save files
             {
-               Console.WriteLine("What is the file name?");
-               string filename = Console.ReadLine();
-                journal.SaveToFile(filename);
-                
+                 journal.SaveToFile();
             }
             else if (choice == "5")
             {
@@ -64,7 +63,7 @@ class Program
                 Console.WriteLine("Invalid choice. Please enter a number between 1 and 5.");
             }
 
-            Console.WriteLine(); // Empty line for readability
+            Console.WriteLine(); 
         }      
     }
 }
