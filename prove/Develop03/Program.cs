@@ -27,14 +27,13 @@ class Program
                 // Clear the console and display the scripture again
                 Console.WriteLine(scripture.GetDisplayText());
 
-                // Hide a few random words
                 scripture2.HideRandomWords(4);
-                // Clear the console and display the scripture again
+                
                 Console.WriteLine(scripture2.GetDisplayText());
 
-                 // Hide a few random words
+                
                 scripture3.HideRandomWords(4);
-                // Clear the console and display the scripture again
+                
                 Console.WriteLine(scripture3.GetDisplayText());
                 
             }
