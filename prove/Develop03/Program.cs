@@ -9,8 +9,6 @@ class Program
         Reference reference = new Reference("Moses", 1,39,1);
         Scripture scripture = new Scripture(reference,"This is my work and my glory—to bring to pass the immortality and eternal life of man.");
          
-        // Scripture scripture2 = new Scripture(reference,"Trust in the Lord with all thine heart … and he shall direct thy paths.");
-
           while (!scripture.IsCompletelyHidden())
         {
             
@@ -19,6 +17,7 @@ class Program
             Console.WriteLine(scripture.GetDisplayText());
              //Console.Clear(); this line isn't working in my computer!! 
             scripture.HideRandomWords(1);
+
            
         }   
     }
