@@ -7,6 +7,7 @@ public class Word {
     public Word (string text) 
     {
          _text = text;
+         _isHidden = false;
         
     }
 
@@ -22,7 +23,7 @@ public class Word {
 
     public bool IsHidden() 
     {
-        return false;
+        return _isHidden;
     }
     
     public string GetDisplayText()  //should return word if visible or underlines if is hidden
