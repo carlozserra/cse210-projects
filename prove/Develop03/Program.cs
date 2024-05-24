@@ -15,7 +15,7 @@ class Program
             string input = Console.ReadLine();
             Console.WriteLine(reference.GetDisplayText());
             Console.WriteLine(scripture.GetDisplayText());
-             //Console.Clear(); this line isn't working in my computer!! 
+             Console.Clear(); //this line isn't working in my computer!! 
             scripture.HideRandomWords(1);
 
            
