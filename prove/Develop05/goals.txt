@@ -1,0 +1,4 @@
+0
+SimpleGoal: a, a, 23, Completed: False
+EternalGoal: a, a, 22
+ChecklistGoal: sda, ds, 22, Completed: 0/11, Bonus: 1
